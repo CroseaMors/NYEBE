@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines</title>
+     <img id="img" src="hump.gif" alt="Animated GIF">
+    <h1 id="text">BE MY VALENTINE?</h1>
+    <style>
+    	#img{
+    		margin-left: 45%;
+    	}
+    	#text{
+    		color: hotpink;
+    		text-align: center;
+ 
+    		font-size: 50px;
+    	}
+    	#btnYes{ 
+    		padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 40%;
+            margin-right: 5%;
+            background-color: deeppink;
+            border: transparent;
+            border-radius: 10px;
+
+    	}
+        #btnNo {
+            padding: 10px 20px;
+            font-size: 16px;
+            position: absolute;
+            background-color: deeppink;
+            border: transparent;
+            border-radius: 10px;
+        }
+        body{
+            background-color: dimgrey;
+        }
+    </style>
+</head>
+<body>
+	<button id="btnYes">Yes I will</button>
+    <button id="btnNo" onmouseover="moveButton()">Sorry I will not</button>
+
+    <script>
+        document.getElementById("btnYes").addEventListener("click", function() {
+            window.location.href = "Yezsir.html";
+        });
+        function moveButton() {
+            var button = document.getElementById("btnNo");
+            var maxX = window.innerWidth - button.offsetWidth;
+            var maxY = window.innerHeight - button.offsetHeight;
+
+            var newX = Math.floor(Math.random() * maxX);
+            var newY = Math.floor(Math.random() * maxY);
+
+            button.style.left = newX + "px";
+            button.style.top = newY + "px";
+        }
+    </script>
+</body>
+</html>
