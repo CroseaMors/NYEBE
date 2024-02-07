@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines</title>
+     <img id="img" src="gifs/yes-cat.gif" alt="Animated GIF">
+    <h1 id="text">WELCOME U WISH TO CONTINUE?</h1>
+    <style>
+    	#img{
+    		margin-left: 35%;
+    	}
+    	#text{
+    		color: hotpink;
+    		text-align: center;
+ 
+    		font-size: 50px;
+    	}
+       /* #img2{
+            margin-left: 40%;
+        }*/
+        #btnYes{ 
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 40%;
+            margin-right: 5%;
+            background-color: deeppink;
+            border: transparent;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btnYes">Yes I do</button>
+    <script>
+        document.getElementById("btnYes").addEventListener("click", function() {
+            window.location.href = "Valentine.html";
+        });
+    </script>
+    <!-- <img id="img2" src="gifs/flower.gif" alt="Animated GIF"> -->
+</body>
+</html>
